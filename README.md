@@ -1,7 +1,8 @@
 # voyce
 ## How to run the app
-clone then cd to voyce repo
-run
+* Clone then cd to voyce repo
+* Create the virtual env
+* Run
 ```
 python manage.py runserver
 ```
