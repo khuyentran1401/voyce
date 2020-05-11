@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block page_content %}
+<h1>Table</h1>
 <table class="table table-striped">
   <thead>
     <tr>
@@ -26,24 +27,27 @@
     </tr>
   </thead>
   <tbody>
+  {% for user in users %}
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <th scope="row">{{ forloop.counter }}</th>
+      <td>{{user.facility}}</td>
+      <td>{{user.type}}</td>
+      <td>{{user.number_beds}}</td>
+      <td>{{user.region}}</td>
+      <td>{{user.address}}</td>
+      <td>{{user.city}}</td>
+      <td>{{user.state}}</td>
+      <td>{{user.zip}}</td>
+      <td>{{user.telefone}}</td>
+      <td>{{user.fax}}</td>
+      <td>{{user.admin}}</td>
+      <td>{{user.admin_email}}</td>
+      <td>{{user.sw}}</td>
+      <td>{{user.sw_email}}</td>
+      <td>{{user.markt}}</td>
+      <td>{{user.martk_email}}</td>
     </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
+  {% endfor %}
   </tbody>
 </table>
 {% endblock %}
