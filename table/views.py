@@ -9,14 +9,14 @@ import csv
 
 def view_table(request):
 
-	with open('../Desktop/voyce.csv') as csvfile:
+	with open('../voyce/voyce.csv') as csvfile:
 
 		next(csvfile)
 
 		data = csv.reader(csvfile, delimiter=',')
 
 		for items in data:
-			
+
 
 			facility = items[0]
 			type = items[1]
