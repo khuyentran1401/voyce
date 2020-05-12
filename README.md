@@ -56,7 +56,3 @@ Delete a branch on your local filesystem
 ```
 git branch -d [name_of_your_new_branch]
 ```
-Delete the branch on github :
-```
-git push origin :[name_of_your_new_branch]
-```
