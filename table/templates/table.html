@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 
 {% block page_content %}
+
+
+<a href="{% url 'new' %}"  class="btn btn-primary btn-lg active" role="button">Insert new data</a>
+
 <h1>Table</h1>
 <table class="table table-striped">
   <thead>
@@ -29,7 +33,7 @@
   <tbody>
   {% for user in users %}
     <tr>
-      <th scope="row">{{ forloop.counter }}</th>
+      <th scope="row">{{ forloop.counter}}</th>
       <td>{{user.facility}}</td>
       <td>{{user.type}}</td>
       <td>{{user.number_beds}}</td>
@@ -50,4 +54,7 @@
   {% endfor %}
   </tbody>
 </table>
+
+
+
 {% endblock %}

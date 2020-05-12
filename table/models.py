@@ -22,6 +22,5 @@ class Table(models.Model):
 	markt = models.CharField(max_length=200, blank=True, null=True)
 	markt_email = models.EmailField(blank=True, null=True)
 
-	def __unicode__(self):
-		return u'%s' % (self.number_beds)
+
 
