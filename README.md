@@ -22,8 +22,15 @@ git branch
 cd voyce
 ```
 * Create the virtual env
-* Run
+``` 
+python3 -m venv venv
+source venv/bin/activate
 ```
+* Install Django
+```
+pip install Django
+```
+* Run
 python manage.py runserver
 ```
 You should be able to see the website
