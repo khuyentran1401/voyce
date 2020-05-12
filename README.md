@@ -31,12 +31,10 @@ source venv/bin/activate
 pip install Django
 ```
 * Run
+```
 python manage.py runserver
 ```
 You should be able to see the website
-
-## Note:
-In settings.py, I use PostgreSQL, you could fix this in the settings (DATABASE) for the settings for MySQL
 
 ## How to commit
 Add the files to commit (use . to commit all files)
