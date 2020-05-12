@@ -5,7 +5,7 @@
 ```
 git clone https://github.com/khuyentran1401/voyce
 ```
-* Create the branch on your local machine 
+* Create the new branch on your local machine (To make sure we don't change the master file before reviewing the change)
 ```
 git branch <name_of_your_new_branch>
 ```
@@ -29,9 +29,6 @@ You should be able to see the website
 In settings.py, I use PostgreSQL, you could fix this in the settings (DATABASE) for the settings for MySQL
 
 ## How to commit
-Since we want to agree on the change before changing the master, create a branch is a great way to do that
-Check out [this tutorial](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches) on how to commit.
-
 Push the branch on github :
 ```
 git push origin [name_of_your_new_branch]
