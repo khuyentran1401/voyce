@@ -32,17 +32,25 @@ You should be able to see the website
 In settings.py, I use PostgreSQL, you could fix this in the settings (DATABASE) for the settings for MySQL
 
 ## How to commit
+Add the files to commit
+```
+git add .
+```
+Commit the fields
+```
+git commit -m "Some message"
+```
 Push the branch on github :
 ```
 git push origin [name_of_your_new_branch]
 ```
 Update your branch when the original branch from official repository has been updated :
 ```
-git fetch [name_of_your_remote]
+git fetch
 ```
 As we review on the change, we can merge the other branch:
 ```
-git merge [name_of_your_remote]
+git merge 
 ```
 Delete a branch on your local filesystem
 ```
