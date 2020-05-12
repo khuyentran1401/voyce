@@ -3,16 +3,19 @@
 * Fork this repo
 * cd to the directory you want to save your file and run 
 ```
-git clone [name_of_your_remote]
+git clone https://github.com/khuyentran1401/voyce.git
 ```
 * Create the new branch on your local machine (To make sure we don't change the master file before reviewing the change)
 ```
 git branch <name_of_your_new_branch>
 ```
-
-* Switch in this branch :
+* See the exising branch:
 ```
- git checkout -b [name_of_your_new_branch]
+git branch
+```
+* Switch in your branch :
+```
+ git checkout [name_of_your_new_branch]
 ```
 * cd to voyce repo
 ```
@@ -33,8 +36,6 @@ Push the branch on github :
 ```
 git push origin [name_of_your_new_branch]
 ```
-When you want to commit something in your branch, be sure to be in your branch. Add -u parameter to set-upstream.
-
 Update your branch when the original branch from official repository has been updated :
 ```
 git fetch [name_of_your_remote]
